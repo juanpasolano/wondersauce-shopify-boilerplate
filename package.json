@@ -1,28 +1,22 @@
 {
-  "name": "parallel-hemp-shopify",
+  "name": "wondersauce-shopify-boilerplate",
   "version": "1.0.0",
   "main": "src/js/index.js",
-  "repository": "git@bitbucket.org:danielviedma/parallel-hemp-shopify.git",
-  "author": "<daniel.viedma@firstborn.com>",
+  "repository": "git@github.com:Wondersauce/wondersauce-shopify-boilerplate.git",
+  "author": "<daniel.viedma@wondersauce.com>",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "cssnano": "^4.1.10",
     "husky": "^4.2.5",
+    "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.3",
     "prettier": "^2.0.4",
     "pretty-quick": "^2.0.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "sass": "^1.23.0-module.beta.1"
+    "sass": "^1.26.3"
   },
   "dependencies": {
-    "autoprefixer": "^9.7.0",
-    "components": "^0.1.0",
-    "js-cookie": "^2.2.1",
-    "npm-run-all": "^4.1.5",
-    "postcss-modules": "^1.4.1",
-    "utils": "^0.3.1"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "scripts": {
     "start": "npm-run-all -p theme:watch parcel:watch:css parcel:watch:js browsersync",
