@@ -2,7 +2,7 @@
 
 A fresh start for your new Shopify project.
 
-![alt text](https://miro.medium.com/fit/c/256/256/0*U2kZTdKe_s977iye.png)
+Cururently based off "Debut" Shopify theme.
 
 ###Code repository
 `https://github.com/Wondersauce/wondersauce-shopify-boilerplate`
