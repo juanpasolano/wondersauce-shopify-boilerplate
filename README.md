@@ -2,9 +2,10 @@
 
 A fresh start for your new Shopify project.
 
-Cururently based off "Debut" Shopify theme.
+Cururently based off "Debut" Shopify theme `https://themes.shopify.com/themes/debut/styles/default`
 
-###Code repository
+### Code repository
+
 `https://github.com/Wondersauce/wondersauce-shopify-boilerplate`
 
 ### Dependencies
