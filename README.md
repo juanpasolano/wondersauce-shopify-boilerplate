@@ -51,7 +51,7 @@ Additionally, each store should have a `Develop` theme where changes from all de
 
 The live theme on each store or `Production` theme should be matched with the `master` branch in the project. Like in the previous case, deploys to this branch should be done via CI (see section below).
 
-Another alternartive to having different themes as environments in the same store is having different stores altogether. i.e. `mysuperstore-dev.myshopify.com` and `mysuperstore.myshopify.com`. We recommend avoid this alternative as the need of having to constantly maintain the two store in sync tends to cripple the velocity of the developement team. Additionally it can be error prone, as the prouduct catalog, widgets, etc. rarely match one to one.
+Another alternartive to having different themes as environments in the same store is having different stores altogether. i.e. `mysuperstore-dev.myshopify.com` and `mysuperstore.myshopify.com`. We recommend avoid this alternative if possible as the need of having to constantly maintain the two store in sync tends to cripple the velocity of the developement team. Additionally it can be error prone, as the prouduct catalog, widgets, etc. rarely match one to one.
 
 ### Continuous Integration (CI)
 
