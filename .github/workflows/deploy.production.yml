@@ -16,7 +16,7 @@ jobs:
         run: npm install
 
       - name: Build sources
-        run: npm-run-all parcel:build:css parcel:build:js
+        run: npm run parcel:build:css & npm run parcel:build:js
 
       - name: Shopify
         uses: pgrimaud/action-shopify@master
