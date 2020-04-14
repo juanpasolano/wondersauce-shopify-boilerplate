@@ -1,11 +1,11 @@
 
-name: Deploy Shopify Production Theme
+name: Deploy Shopify Development Theme
 
 on:
   push:
-    branches: [ master ]
+    branches: [ develop ]
   pull_request:
-    branches: [ master ]
+    branches: [ develop ]
 jobs:
   shopify:
     name: Shopify
@@ -17,5 +17,5 @@ jobs:
         env:
           SHOPIFY_PASSWORD: ${{ secrets.SHOPIFY_PASSWORD }}
           SHOPIFY_STORE_URL: ${{ secrets.SHOPIFY_STORE_URL }}
-          SHOPIFY_THEME_ID: ${{ secrets.SHOPIFY_THEME_ID }}
+          SHOPIFY_THEME_ID: ${{ secrets.SHOPIFY_DEVELOP_THEME_ID }}
           THEME_PATH: ${{ secrets.THEME_PATH }}
