@@ -1,7 +1,11 @@
 
-name: Deploy Shopify Theme
+name: Deploy Shopify Production Theme
 
-on: [push]
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 jobs:
   shopify:
     name: Shopify
