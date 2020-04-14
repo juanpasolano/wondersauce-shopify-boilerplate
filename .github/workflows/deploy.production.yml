@@ -12,8 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: npm install
+
       - name: Build sources
-        run: npm install & npm-run-all parcel:build:css parcel:build:js
+        run: npm-run-all parcel:build:css parcel:build:js
 
       - name: Shopify
         uses: pgrimaud/action-shopify@master
