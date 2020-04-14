@@ -1,17 +1,23 @@
-
 name: Deploy Shopify Development Theme
 
 on:
   push:
-    branches: [ develop ]
+    branches: [develop]
   pull_request:
-    branches: [ develop ]
+    branches: [develop]
 jobs:
   shopify:
     name: Shopify
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build sources
+        run: npm run parcel:build:css & npm run parcel:build:js
+
       - name: Shopify
         uses: pgrimaud/action-shopify@master
         env:
