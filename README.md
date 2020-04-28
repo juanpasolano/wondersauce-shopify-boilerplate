@@ -36,12 +36,18 @@ Prettier (`https://prettier.io/`) has been set up in the project for consistent 
 
 ### Folder structure
 
-- /assets, /config, /layout, /locales, /sections, /snippets, /templates # Shopify theme files
-- /src # Custom JS/CSS
+- /assets
+- /config
+- /layout
+- /locales
+- /sections
+- /snippets
+- /templates
+- /src `//Custom JS/CSS`
   - /js
   - /styles
-- browsersync-script.js # Runs Browsersync on `yarn start`
-- config.sample.yml A sample file to configure theme kit
+- browsersync-script.js `//Runs Browsersync on yarn start`
+- config.sample.yml `//A sample file to configure theme kit`
 
 ### Development workflow
 
@@ -66,5 +72,9 @@ For more details of the implementation please see files in `.github/workflows`
 WIP
 
 ### Component catalog
+
+WIP
+
+### Shopify developer resources
 
 WIP
