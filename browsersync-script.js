@@ -12,7 +12,6 @@ bs.init({
     shopifyConfig.store +
     "/?preview_theme_id=" +
     shopifyConfig.theme_id,
-  files: ["/tmp/somefile"],
   snippetOptions: {
     rule: {
       match: /<\/body>/i,
