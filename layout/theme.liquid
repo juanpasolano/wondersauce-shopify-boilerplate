@@ -104,15 +104,17 @@
   <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
 
-  <!-- START: Custom CSS and JS -->
+  <!-- START: Custom CSS -->
   {{ 'styles.css' | asset_url | stylesheet_tag }}
-  {{ 'index.js' | asset_url | script_tag }}
-  <!-- START: Custom CSS and JS -->
+  <!-- START: Custom CSS -->
 
   {{ content_for_header }}
 </head>
 
 <body class="template-{{ request.page_type | handle }}">
+  
+  <div id="app"></div>
+
   <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
   {%- if settings.enable_ajax -%}
@@ -149,5 +151,10 @@
     <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
     <li id="a11y-selection-message">{{ 'general.accessibility.selection_help' | t }}</li>
   </ul>
+
+  
+  <!-- START: Custom JS -->
+  {{ 'index.js' | asset_url | script_tag }}
+  <!-- START: Custom JS -->
 </body>
 </html>
